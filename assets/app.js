@@ -1,4 +1,3 @@
-// Theme: persist in localStorage
 (function initTheme(){
   const saved = localStorage.getItem("dotek_theme");
   const prefersDark = window.matchMedia?.("(prefers-color-scheme: dark)")?.matches;
@@ -14,23 +13,19 @@ function toggleTheme(){
   toast(`Tema: ${next === "dark" ? "Koyu" : "Açık"}`);
 }
 
-// Mobile menu
 const overlay = document.getElementById("overlay");
 document.getElementById("menuBtn")?.addEventListener("click", () => overlay.classList.add("show"));
 document.getElementById("closeBtn")?.addEventListener("click", () => overlay.classList.remove("show"));
 overlay?.addEventListener("click", (e) => { if(e.target === overlay) overlay.classList.remove("show"); });
 function closeMenu(){ overlay?.classList.remove("show"); }
 
-// Active link highlight
 (function markActive(){
   const path = location.pathname.split("/").pop() || "index.html";
   document.querySelectorAll("[data-nav]").forEach(a => {
-    const href = a.getAttribute("href");
-    if(href === path) a.classList.add("active");
+    if(a.getAttribute("href") === path) a.classList.add("active");
   });
 })();
 
-// Reveal on scroll
 (function reveal(){
   const els = [...document.querySelectorAll(".reveal")];
   if(!("IntersectionObserver" in window)){
@@ -48,10 +43,8 @@ function closeMenu(){ overlay?.classList.remove("show"); }
   els.forEach(e=>io.observe(e));
 })();
 
-// Year
 document.getElementById("year") && (document.getElementById("year").textContent = new Date().getFullYear());
 
-// Toast
 let toastTimer;
 function toast(msg){
   const t = document.getElementById("toast");
@@ -62,7 +55,6 @@ function toast(msg){
   toastTimer = setTimeout(()=> t.style.display="none", 2400);
 }
 
-// Contact: fake submit (no backend)
 function handleContactSubmit(e){
   e.preventDefault();
   toast("Mesaj alındı! (Demo) Backend bağlarsak gerçek gönderim olur.");
