@@ -9,13 +9,10 @@
 
   --brandRed: #E11D48;
   --brandRed2:#B91C1C;
-  --a2:#22D3EE;
-  --a3:#34D399;
 
   --radius: 18px;
   --radius2: 26px;
   --max: 1120px;
-
   --focus: rgba(225,29,72,.45);
 }
 
@@ -64,22 +61,32 @@ header{
 }
 
 .nav{
-  display:flex; align-items:center; justify-content:space-between;
-  padding: 14px 0;
-  gap: 14px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 12px;
+  padding: 12px 0;
+  flex-wrap: wrap;              /* ✅ taşma olunca alt satıra iner */
 }
 
-.brand{ display:flex; align-items:center; gap:12px; }
+.brand{ display:flex; align-items:center; gap:10px; min-width: 200px; }
 .logo-img{
   height: 34px;
   width: auto;
   display:block;
   filter: drop-shadow(0 12px 26px rgba(225,29,72,.18));
 }
-.brand b{ font-size: 16px; }
-.brand small{ display:block; color: var(--muted); font-size: 12px; margin-top:2px; opacity:.9; }
 
-.links{ display:flex; align-items:center; gap: 10px; flex-wrap:wrap; }
+.brand span{ display:flex; flex-direction:column; line-height:1.1; }
+.brand b{ font-size: 16px; }
+.brand small{ color: var(--muted); font-size: 12px; margin-top:2px; opacity:.9; }
+
+.links{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
 .links a{
   padding: 10px 12px;
   border-radius: 12px;
@@ -97,7 +104,13 @@ header{
   background: linear-gradient(135deg, rgba(225,29,72,.16), rgba(185,28,28,.10));
 }
 
-.cta{ display:flex; align-items:center; gap: 10px; }
+.cta{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  flex-wrap: wrap;              /* ✅ butonlar alt satıra iner */
+  justify-content:flex-end;
+}
 
 .btn{
   border: 1px solid rgba(255,255,255,.16);
@@ -109,6 +122,7 @@ header{
   transition: .2s ease;
   font-weight: 700;
   letter-spacing: .2px;
+  white-space: nowrap;
 }
 .btn:hover{ transform: translateY(-1px); border-color: rgba(255,255,255,.26); }
 
@@ -123,11 +137,17 @@ header{
 }
 
 .hamburger{ display:none; }
+
+/* ✅ Mobilde brand texti gizleyip header'ı sıkılaştır */
 @media (max-width: 860px){
   .links{ display:none; }
   .hamburger{ display:inline-flex; }
+  .brand span{ display:none; }      /* sadece logo kalsın */
+  .brand{ min-width: auto; }
+  .btn{ padding: 10px 12px; }
 }
 
+/* Cards */
 .card{
   border-radius: var(--radius2);
   background: var(--card);
@@ -135,8 +155,7 @@ header{
   box-shadow: var(--shadow);
 }
 
-.hero{ padding: 56px 0 22px; position: relative; }
-
+.hero{ padding: 52px 0 18px; position: relative; }
 .hero::after{
   content:"";
   position:absolute;
@@ -177,7 +196,7 @@ header{
 
 h1{
   margin: 14px 0 12px;
-  font-size: clamp(32px, 3.2vw, 54px);
+  font-size: clamp(30px, 3.2vw, 54px);
   line-height: 1.04;
   letter-spacing: -0.8px;
 }
@@ -230,7 +249,6 @@ section{ padding: 24px 0; }
   background: rgba(255,255,255,.04);
   border: 1px solid rgba(255,255,255,.10);
   transition:.2s ease;
-  min-height: 140px;
   position:relative;
   overflow:hidden;
 }
@@ -250,6 +268,66 @@ section{ padding: 24px 0; }
 }
 .feature h3{ margin:0 0 6px; font-size: 16px; }
 .feature p{ margin:0; color: var(--muted); line-height: 1.55; font-size: 14px; }
+
+/* ===== ÜRÜN KARTLARI ===== */
+.product-card{
+  padding: 14px;
+}
+.product-top{
+  display:flex;
+  justify-content:space-between;
+  gap: 10px;
+  align-items:flex-start;
+}
+.product-title{
+  font-weight: 900;
+  letter-spacing:-.2px;
+}
+.product-sub{
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 6px;
+  line-height:1.5;
+}
+.product-img{
+  width:100%;
+  height: 160px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(0,0,0,.25);
+  overflow:hidden;
+  margin-top: 12px;
+}
+.product-img svg{ width:100%; height:100%; display:block; }
+
+.product-actions{
+  display:flex; gap:10px; flex-wrap:wrap;
+  margin-top: 12px;
+}
+.kebab{
+  width:40px;
+  height:40px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.16);
+  background: rgba(255,255,255,.04);
+  display:grid;
+  place-items:center;
+  cursor:pointer;
+}
+.kebab:hover{ transform: translateY(-1px); }
+
+.product-mini{
+  display:none;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.03);
+  color: rgba(255,255,255,.82);
+  font-size: 13px;
+  line-height:1.6;
+}
+.product-mini.show{ display:block; }
 
 .visual{ padding: 18px; position: relative; overflow:hidden; }
 .visual::before{
