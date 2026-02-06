@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Dotek — Hizmetler</title>
-  <meta name="description" content="Dotek hizmetleri: lazer kesim, CNC büküm, fason, endüstriyel imalat." />
+  <title>DOTEK — Ürünler</title>
+  <meta name="description" content="DOTEK ürünleri: Beton, Bitüm-Asfalt, Çimento-Harç, Toprak, Agrega-Kaya, Çelik ve Genel Test Cihazları." />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
@@ -14,14 +14,14 @@
     <div class="container">
       <div class="nav">
         <a class="brand" href="index.html">
-          <img src="assets/dotek-logo.svg" alt="Dotek" class="logo-img">
-          <span><b>Dotek</b><small>Testing & Training Devices</small></span>
+          <img src="assets/dotek-logo.svg" alt="DOTEK" class="logo-img">
+          <span><b>DOTEK</b><small>İleri Teknoloji</small></span>
         </a>
 
         <nav class="links">
           <a data-nav href="index.html">Ana Sayfa</a>
-          <a data-nav href="solutions.html">Hizmetler</a>
-          <a data-nav href="about.html">Hakkında</a>
+          <a data-nav href="solutions.html">Ürünler</a>
+          <a data-nav href="about.html">Hakkımızda</a>
           <a data-nav href="contact.html">İletişim</a>
         </nav>
 
@@ -38,9 +38,12 @@
     <section class="hero">
       <div class="container">
         <div class="reveal">
-          <div class="pill"><span class="dot"></span><span>Hizmetler • Üretim & imalat</span></div>
-          <h1><span class="grad">Hizmetler</span> — üretime hazır çözümler</h1>
-          <p class="lead">İhtiyaca göre: tek parça işten seri üretime kadar planlama yapıyoruz.</p>
+          <div class="pill"><span class="dot"></span><span>Ürünler • Test Cihazları</span></div>
+          <h1><span class="grad">Ürünler</span> — Test Cihazları</h1>
+          <p class="lead">
+            Beton, Bitüm-Asfalt, Çimento-Harç, Toprak, Agrega-Kaya, Çelik ve Genel Test Cihazları.
+            Ürüne tıklayıp detay sayfasını açabilirsin.
+          </p>
         </div>
       </div>
     </section>
@@ -48,60 +51,11 @@
     <section>
       <div class="container">
         <div class="section-title">
-          <h2>Üretim başlıkları</h2>
-          <p>Karttaki hizmetlerini buraya listeledim. İstersen detay sayfaları da ekleriz.</p>
+          <h2>Ürün Kartları</h2>
+          <p>Karttaki (⋮) burger ile “Ürün hakkında” panelini aç/kapat. “Ürünü incele” ile detay sayfasına geç.</p>
         </div>
 
-        <div class="grid3">
-          <article class="feature reveal">
-            <div class="icon">✂️</div>
-            <h3>Lazer Kesim</h3>
-            <p>Metal kesim, hassas ölçü, hızlı termin. Dosya/çizime göre teklif.</p>
-          </article>
-          <article class="feature reveal">
-            <div class="icon">📐</div>
-            <h3>CNC Büküm</h3>
-            <p>Büküm kalıbı/ölçü kontrol ile tutarlı sonuç. Fason işler de yapılır.</p>
-          </article>
-          <article class="feature reveal">
-            <div class="icon">🏭</div>
-            <h3>İmalat</h3>
-            <p>Endüstriyel makina imalatı, özel projeler, sahaya uygun üretim.</p>
-          </article>
-        </div>
-
-        <div class="grid3" style="margin-top:14px;">
-          <article class="feature reveal">
-            <div class="icon">🍽️</div>
-            <h3>Endüstriyel Mutfak İmalatı</h3>
-            <p>Projelendirme, üretim ve montaj süreçleriyle kurumsal çözümler.</p>
-          </article>
-          <article class="feature reveal">
-            <div class="icon">🧰</div>
-            <h3>Fason Kesim & Büküm</h3>
-            <p>Parça bazlı işlerde hızlı kapasite desteği ve termin planı.</p>
-          </article>
-          <article class="feature reveal">
-            <div class="icon">🏥</div>
-            <h3>Hastane & Medikal Ekipman</h3>
-            <p>İhtiyaca uygun imalat, dayanım ve iş güvenliği odaklı üretim.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="band reveal">
-          <div>
-            <h3>Hızlı teklif al</h3>
-            <p>İhtiyacını yaz, çizimini ekle; en kısa sürede dönüş yapalım.</p>
-          </div>
-          <div style="display:flex; gap:10px; flex-wrap:wrap;">
-            <a class="btn" href="about.html">Süreç</a>
-            <a class="btn primary" href="contact.html">İletişim</a>
-          </div>
-        </div>
+        <div class="grid3" id="productsGrid"></div>
       </div>
     </section>
 
@@ -109,12 +63,12 @@
       <div class="container">
         <div class="footer-grid">
           <div>
-            <img src="assets/dotek-logo.svg" alt="Dotek" class="logo-img" style="height:32px; margin-bottom:10px;">
-            <div style="font-size:13px;">© <span id="year"></span> Dotek</div>
+            <img src="assets/dotek-logo.svg" alt="DOTEK" class="logo-img" style="height:32px; margin-bottom:10px;">
+            <div style="font-size:13px;">© <span id="year"></span> DOTEK</div>
           </div>
           <div style="display:flex; gap:14px; flex-wrap:wrap;">
             <a href="index.html">Ana Sayfa</a>
-            <a href="about.html">Hakkında</a>
+            <a href="about.html">Hakkımızda</a>
             <a href="contact.html">İletişim</a>
           </div>
         </div>
@@ -126,14 +80,15 @@
     <div class="sheet">
       <button class="btn" id="closeBtn" style="width:100%;">Kapat</button>
       <a href="index.html" onclick="closeMenu()">Ana Sayfa</a>
-      <a href="solutions.html" onclick="closeMenu()">Hizmetler</a>
-      <a href="about.html" onclick="closeMenu()">Hakkında</a>
+      <a href="solutions.html" onclick="closeMenu()">Ürünler</a>
+      <a href="about.html" onclick="closeMenu()">Hakkımızda</a>
       <a href="contact.html" onclick="closeMenu()">İletişim</a>
       <button class="btn icon" onclick="toggleTheme()" style="width:100%; margin-top:10px;">🌓 Tema</button>
     </div>
   </div>
 
   <div id="toast"></div>
+  <script src="assets/products.js"></script>
   <script src="assets/app.js"></script>
 </body>
 </html>
