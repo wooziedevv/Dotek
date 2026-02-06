@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Dotek — İletişim</title>
-  <meta name="description" content="Dotek iletişim: teklif, demo ve proje planlama." />
+  <meta name="description" content="Dotek iletişim: teklif ve proje görüşmesi." />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
@@ -14,13 +14,13 @@
     <div class="container">
       <div class="nav">
         <a class="brand" href="index.html">
-          <span class="logo" aria-hidden="true"></span>
-          <span><b>Dotek</b><small>İleri teknoloji çözümleri</small></span>
+          <img src="assets/dotek-logo.svg" alt="Dotek" class="logo-img">
+          <span><b>Dotek</b><small>Testing & Training Devices</small></span>
         </a>
 
-        <nav class="links" aria-label="menü">
+        <nav class="links">
           <a data-nav href="index.html">Ana Sayfa</a>
-          <a data-nav href="solutions.html">Çözümler</a>
+          <a data-nav href="solutions.html">Hizmetler</a>
           <a data-nav href="about.html">Hakkında</a>
           <a data-nav href="contact.html">İletişim</a>
         </nav>
@@ -38,39 +38,70 @@
     <section class="hero">
       <div class="container">
         <div class="reveal">
-          <div class="pill"><span class="dot"></span><span>İletişim • Demo & teklif</span></div>
-          <h1><span class="grad">İletişim</span> — hızlı dönüş</h1>
-          <p class="lead">Aşağıdaki form demo amaçlıdır. İstersen Node/PHP/Firebase ile gerçek gönderim bağlarım.</p>
+          <div class="pill"><span class="dot"></span><span>İletişim • Teklif & görüşme</span></div>
+          <h1><span class="grad">İletişim</span></h1>
+          <p class="lead">Form demo çalışır. İstersen bunu gerçek mail gönderimine bağlarız.</p>
         </div>
       </div>
     </section>
 
     <section>
       <div class="container">
+
+        <!-- Bilgi kartı: buraya karttaki adres/telefonları istersen ekleriz -->
+        <div class="card reveal" style="padding:18px; margin-bottom:14px;">
+          <div style="display:flex; gap:14px; flex-wrap:wrap; align-items:flex-start; justify-content:space-between;">
+            <div>
+              <div style="font-weight:950; letter-spacing:-.2px;">Dotek</div>
+              <div style="color:var(--muted); font-size:13px; margin-top:6px;">
+                Adres: (buraya karttaki adres)
+              </div>
+              <div style="color:var(--muted); font-size:13px; margin-top:6px;">
+                Tel: (buraya telefon) • Mail: dotek@dotek.com.tr
+              </div>
+              <div style="color:var(--muted); font-size:13px; margin-top:6px;">
+                Web: dotek.com.tr
+              </div>
+            </div>
+
+            <div style="min-width:240px;">
+              <span class="chip" style="display:inline-block; margin-bottom:8px; border-color: rgba(225,29,72,.25);">
+                Hizmetler
+              </span>
+              <div style="color:var(--muted); font-size:13px; line-height:1.7;">
+                • Lazer Kesim • CNC Büküm • İmalat<br/>
+                • Endüstriyel Mutfak İmalatı<br/>
+                • Fason Kesim & Büküm<br/>
+                • Endüstriyel Makina İmalatı
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="card reveal" style="padding:18px;">
           <form onsubmit="handleContactSubmit(event)">
             <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px;">
-              <label style="display:block;">
+              <label>
                 <div style="font-size:13px; color:var(--muted); margin-bottom:8px;">Ad Soyad</div>
                 <input required placeholder="Adınız"
-                  style="width:100%; padding:12px 12px; border-radius:14px; border:1px solid var(--stroke); background: color-mix(in oklab, var(--card) 70%, transparent); color: var(--text);" />
+                  style="width:100%; padding:12px; border-radius:14px; border:1px solid var(--stroke); background: rgba(255,255,255,.03); color: var(--text);" />
               </label>
-              <label style="display:block;">
+              <label>
                 <div style="font-size:13px; color:var(--muted); margin-bottom:8px;">E-posta</div>
-                <input required type="email" placeholder="ornek@dotek.com"
-                  style="width:100%; padding:12px 12px; border-radius:14px; border:1px solid var(--stroke); background: color-mix(in oklab, var(--card) 70%, transparent); color: var(--text);" />
+                <input required type="email" placeholder="ornek@dotek.com.tr"
+                  style="width:100%; padding:12px; border-radius:14px; border:1px solid var(--stroke); background: rgba(255,255,255,.03); color: var(--text);" />
               </label>
             </div>
 
             <label style="display:block; margin-top:12px;">
               <div style="font-size:13px; color:var(--muted); margin-bottom:8px;">Mesaj</div>
-              <textarea required placeholder="Kısaca ihtiyacınızı yazın..." rows="5"
-                style="width:100%; padding:12px 12px; border-radius:14px; border:1px solid var(--stroke); background: color-mix(in oklab, var(--card) 70%, transparent); color: var(--text); resize: vertical;"></textarea>
+              <textarea required rows="5" placeholder="İhtiyacınızı yazın..."
+                style="width:100%; padding:12px; border-radius:14px; border:1px solid var(--stroke); background: rgba(255,255,255,.03); color: var(--text); resize: vertical;"></textarea>
             </label>
 
             <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-top:12px;">
               <button class="btn primary" type="submit">Gönder</button>
-              <a class="btn" href="mailto:info@dotek.com?subject=Dotek%20Teklif%20Talebi">Mail ile gönder</a>
+              <a class="btn" href="mailto:dotek@dotek.com.tr?subject=Dotek%20Teklif%20Talebi">Mail ile gönder</a>
               <span style="color:var(--muted); font-size:13px;">Yanıt süresi genelde 24 saat.</span>
             </div>
           </form>
@@ -81,16 +112,13 @@
     <footer>
       <div class="container">
         <div class="footer-grid">
-          <div style="max-width: 52ch;">
-            <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
-              <span class="logo" aria-hidden="true" style="width:34px; height:34px;"></span>
-              <div><div style="font-weight:900;">Dotek</div><div style="font-size:13px; color:var(--muted);">İleri Teknoloji</div></div>
-            </div>
+          <div>
+            <img src="assets/dotek-logo.svg" alt="Dotek" class="logo-img" style="height:32px; margin-bottom:10px;">
             <div style="font-size:13px;">© <span id="year"></span> Dotek</div>
           </div>
           <div style="display:flex; gap:14px; flex-wrap:wrap;">
             <a href="index.html">Ana Sayfa</a>
-            <a href="solutions.html">Çözümler</a>
+            <a href="solutions.html">Hizmetler</a>
             <a href="about.html">Hakkında</a>
           </div>
         </div>
@@ -102,7 +130,7 @@
     <div class="sheet">
       <button class="btn" id="closeBtn" style="width:100%;">Kapat</button>
       <a href="index.html" onclick="closeMenu()">Ana Sayfa</a>
-      <a href="solutions.html" onclick="closeMenu()">Çözümler</a>
+      <a href="solutions.html" onclick="closeMenu()">Hizmetler</a>
       <a href="about.html" onclick="closeMenu()">Hakkında</a>
       <a href="contact.html" onclick="closeMenu()">İletişim</a>
       <button class="btn icon" onclick="toggleTheme()" style="width:100%; margin-top:10px;">🌓 Tema</button>
