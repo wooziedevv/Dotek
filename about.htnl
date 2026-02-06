@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Dotek — Hakkında</title>
-  <meta name="description" content="Dotek hakkında: üretim yaklaşımı, süreç ve kalite prensipleri." />
+  <title>DOTEK — Hakkımızda</title>
+  <meta name="description" content="DOTEK Hakkımızda" />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
@@ -14,14 +14,14 @@
     <div class="container">
       <div class="nav">
         <a class="brand" href="index.html">
-          <img src="assets/dotek-logo.svg" alt="Dotek" class="logo-img">
-          <span><b>Dotek</b><small>Testing & Training Devices</small></span>
+          <img src="assets/dotek-logo.svg" alt="DOTEK" class="logo-img">
+          <span><b>DOTEK</b><small>İleri Teknoloji</small></span>
         </a>
 
         <nav class="links">
           <a data-nav href="index.html">Ana Sayfa</a>
-          <a data-nav href="solutions.html">Hizmetler</a>
-          <a data-nav href="about.html">Hakkında</a>
+          <a data-nav href="solutions.html">Ürünler</a>
+          <a data-nav href="about.html">Hakkımızda</a>
           <a data-nav href="contact.html">İletişim</a>
         </nav>
 
@@ -38,35 +38,34 @@
     <section class="hero">
       <div class="container">
         <div class="reveal">
-          <div class="pill"><span class="dot"></span><span>Hakkında • Süreç & kalite</span></div>
-          <h1><span class="grad">Dotek</span> yaklaşımı</h1>
-          <p class="lead">İşin başından sonuna: doğru planlama, net iletişim, zamanında teslim.</p>
+          <div class="pill"><span class="dot"></span><span>Hakkımızda</span></div>
+          <h1><span class="grad">DOTEK İLERİ TEKNOLOJİ</span></h1>
+          <p class="lead">
+            Beton, Bitüm-Asfalt, Çimento-Harç, Toprak, Agrega, Kaya, Çelik ve Genel Test Cihazları imalatçısı olan DOTEK
+            yıllardır edindiği tecrübe sayesinde, Türkiye'nin önde gelen ve dünyaca bilinen saygın ve güvenilir firmalardan biri olmuştur.
+            Ankara’da hizmet vermektedir.
+          </p>
         </div>
       </div>
     </section>
 
     <section>
       <div class="container">
-        <div class="section-title">
-          <h2>3 adımda süreç</h2>
-          <p>Teklif → üretim → teslim. Her adımda kontrol ve raporlama.</p>
-        </div>
-
         <div class="grid3">
           <article class="feature reveal">
-            <div class="icon">🧾</div>
-            <h3>1) Teklif & Plan</h3>
-            <p>Dosya/çizim inceleme, malzeme seçimi, termin belirleme.</p>
+            <div class="icon">🏭</div>
+            <h3>İmalat Gücü</h3>
+            <p>Üretimde dayanıklılık ve kalite standartlarıyla uzun ömürlü çözümler.</p>
           </article>
           <article class="feature reveal">
-            <div class="icon">🧱</div>
-            <h3>2) Üretim</h3>
-            <p>Lazer kesim, büküm, kaynak/işçilik ve montaj süreçleri.</p>
+            <div class="icon">📏</div>
+            <h3>Hassas Ölçüm</h3>
+            <p>Test süreçlerinde tekrarlanabilir ölçüm ve güvenilir sonuçlar.</p>
           </article>
           <article class="feature reveal">
-            <div class="icon">✅</div>
-            <h3>3) Kalite & Teslim</h3>
-            <p>Ölçü kontrol, paketleme ve zamanında sevkiyat.</p>
+            <div class="icon">🤝</div>
+            <h3>Servis & Destek</h3>
+            <p>Ürün seçimi, kullanım ve sipariş sürecinde hızlı destek.</p>
           </article>
         </div>
       </div>
@@ -76,11 +75,11 @@
       <div class="container">
         <div class="band reveal">
           <div>
-            <h3>Projeni birlikte netleştirelim</h3>
-            <p>İhtiyacını yaz, hızlıca dönüş yapalım.</p>
+            <h3>Ürünleri inceleyin</h3>
+            <p>Ürün kartlarına girip detay sayfalarında açıklama ve sipariş alanını görebilirsiniz.</p>
           </div>
           <div style="display:flex; gap:10px; flex-wrap:wrap;">
-            <a class="btn" href="solutions.html">Hizmetler</a>
+            <a class="btn" href="solutions.html">Ürünler</a>
             <a class="btn primary" href="contact.html">İletişim</a>
           </div>
         </div>
@@ -91,12 +90,11 @@
       <div class="container">
         <div class="footer-grid">
           <div>
-            <img src="assets/dotek-logo.svg" alt="Dotek" class="logo-img" style="height:32px; margin-bottom:10px;">
-            <div style="font-size:13px;">© <span id="year"></span> Dotek</div>
+            <img src="assets/dotek-logo.svg" alt="DOTEK" class="logo-img" style="height:32px; margin-bottom:10px;">
+            <div style="font-size:13px;">© <span id="year"></span> DOTEK</div>
           </div>
           <div style="display:flex; gap:14px; flex-wrap:wrap;">
-            <a href="index.html">Ana Sayfa</a>
-            <a href="solutions.html">Hizmetler</a>
+            <a href="solutions.html">Ürünler</a>
             <a href="contact.html">İletişim</a>
           </div>
         </div>
@@ -108,8 +106,8 @@
     <div class="sheet">
       <button class="btn" id="closeBtn" style="width:100%;">Kapat</button>
       <a href="index.html" onclick="closeMenu()">Ana Sayfa</a>
-      <a href="solutions.html" onclick="closeMenu()">Hizmetler</a>
-      <a href="about.html" onclick="closeMenu()">Hakkında</a>
+      <a href="solutions.html" onclick="closeMenu()">Ürünler</a>
+      <a href="about.html" onclick="closeMenu()">Hakkımızda</a>
       <a href="contact.html" onclick="closeMenu()">İletişim</a>
       <button class="btn icon" onclick="toggleTheme()" style="width:100%; margin-top:10px;">🌓 Tema</button>
     </div>
