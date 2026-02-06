@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Dotek — Hakkında</title>
-  <meta name="description" content="Dotek hakkında: süreç, prensipler, teknoloji yaklaşımı." />
+  <meta name="description" content="Dotek hakkında: üretim yaklaşımı, süreç ve kalite prensipleri." />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
@@ -14,13 +14,13 @@
     <div class="container">
       <div class="nav">
         <a class="brand" href="index.html">
-          <span class="logo" aria-hidden="true"></span>
-          <span><b>Dotek</b><small>İleri teknoloji çözümleri</small></span>
+          <img src="assets/dotek-logo.svg" alt="Dotek" class="logo-img">
+          <span><b>Dotek</b><small>Testing & Training Devices</small></span>
         </a>
 
-        <nav class="links" aria-label="menü">
+        <nav class="links">
           <a data-nav href="index.html">Ana Sayfa</a>
-          <a data-nav href="solutions.html">Çözümler</a>
+          <a data-nav href="solutions.html">Hizmetler</a>
           <a data-nav href="about.html">Hakkında</a>
           <a data-nav href="contact.html">İletişim</a>
         </nav>
@@ -38,9 +38,9 @@
     <section class="hero">
       <div class="container">
         <div class="reveal">
-          <div class="pill"><span class="dot"></span><span>Hakkında • Süreç & prensip</span></div>
-          <h1><span class="grad">Dotek</span> nasıl çalışır?</h1>
-          <p class="lead">Modern ürün geliştirme mantığıyla ilerleriz: tasarım sistemi, net teslimatlar, ölçülebilir sonuç.</p>
+          <div class="pill"><span class="dot"></span><span>Hakkında • Süreç & kalite</span></div>
+          <h1><span class="grad">Dotek</span> yaklaşımı</h1>
+          <p class="lead">İşin başından sonuna: doğru planlama, net iletişim, zamanında teslim.</p>
         </div>
       </div>
     </section>
@@ -49,54 +49,25 @@
       <div class="container">
         <div class="section-title">
           <h2>3 adımda süreç</h2>
-          <p>Hızlı ama kontrollü: önce netleştir, sonra üret, sonra optimize et.</p>
+          <p>Teklif → üretim → teslim. Her adımda kontrol ve raporlama.</p>
         </div>
 
         <div class="grid3">
           <article class="feature reveal">
-            <div class="icon">🧭</div>
-            <h3>1) Keşif</h3>
-            <p>Hedef, kullanıcı, içerik ve önceliklerin çıkarılması. Basit bir yol haritası.</p>
+            <div class="icon">🧾</div>
+            <h3>1) Teklif & Plan</h3>
+            <p>Dosya/çizim inceleme, malzeme seçimi, termin belirleme.</p>
           </article>
           <article class="feature reveal">
             <div class="icon">🧱</div>
-            <h3>2) Tasarım Sistemi</h3>
-            <p>Renk/typography, component set, sayfa şablonları. Sonra geliştirme çok hızlanır.</p>
+            <h3>2) Üretim</h3>
+            <p>Lazer kesim, büküm, kaynak/işçilik ve montaj süreçleri.</p>
           </article>
           <article class="feature reveal">
-            <div class="icon">🚀</div>
-            <h3>3) Yayın & İyileştirme</h3>
-            <p>Performans, erişilebilirlik, SEO temel, analytics/ölçüm ve iterasyon.</p>
+            <div class="icon">✅</div>
+            <h3>3) Kalite & Teslim</h3>
+            <p>Ölçü kontrol, paketleme ve zamanında sevkiyat.</p>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="card reveal" style="padding:18px;">
-          <div class="section-title" style="margin-bottom:0;">
-            <h2>Prensipler</h2>
-            <p>“Şık görünmek” değil, “işe yaramak” hedef: hız, güven, sadelik.</p>
-          </div>
-
-          <div class="grid3" style="margin-top:14px;">
-            <div class="feature" style="min-height:auto;">
-              <div class="icon">⚡</div>
-              <h3>Performans</h3>
-              <p>Hafif arayüz, optimize kaynaklar, hızlı açılış.</p>
-            </div>
-            <div class="feature" style="min-height:auto;">
-              <div class="icon">🛡️</div>
-              <h3>Güvenlik</h3>
-              <p>Sağlam varsayılanlar, minimum risk, temiz yapı.</p>
-            </div>
-            <div class="feature" style="min-height:auto;">
-              <div class="icon">🎯</div>
-              <h3>Dönüşüm</h3>
-              <p>Net CTA, doğru hiyerarşi, kullanıcı akışı.</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -105,11 +76,11 @@
       <div class="container">
         <div class="band reveal">
           <div>
-            <h3>Dotek ile başlamak kolay</h3>
-            <p>İhtiyacını 3 cümleyle yaz, önerilen planı çıkaralım.</p>
+            <h3>Projeni birlikte netleştirelim</h3>
+            <p>İhtiyacını yaz, hızlıca dönüş yapalım.</p>
           </div>
           <div style="display:flex; gap:10px; flex-wrap:wrap;">
-            <a class="btn" href="solutions.html">Çözümler</a>
+            <a class="btn" href="solutions.html">Hizmetler</a>
             <a class="btn primary" href="contact.html">İletişim</a>
           </div>
         </div>
@@ -119,16 +90,13 @@
     <footer>
       <div class="container">
         <div class="footer-grid">
-          <div style="max-width: 52ch;">
-            <div style="display:flex; align-items:center; gap:10px; margin-bottom:10px;">
-              <span class="logo" aria-hidden="true" style="width:34px; height:34px;"></span>
-              <div><div style="font-weight:900;">Dotek</div><div style="font-size:13px; color:var(--muted);">İleri Teknoloji</div></div>
-            </div>
+          <div>
+            <img src="assets/dotek-logo.svg" alt="Dotek" class="logo-img" style="height:32px; margin-bottom:10px;">
             <div style="font-size:13px;">© <span id="year"></span> Dotek</div>
           </div>
           <div style="display:flex; gap:14px; flex-wrap:wrap;">
             <a href="index.html">Ana Sayfa</a>
-            <a href="solutions.html">Çözümler</a>
+            <a href="solutions.html">Hizmetler</a>
             <a href="contact.html">İletişim</a>
           </div>
         </div>
@@ -140,7 +108,7 @@
     <div class="sheet">
       <button class="btn" id="closeBtn" style="width:100%;">Kapat</button>
       <a href="index.html" onclick="closeMenu()">Ana Sayfa</a>
-      <a href="solutions.html" onclick="closeMenu()">Çözümler</a>
+      <a href="solutions.html" onclick="closeMenu()">Hizmetler</a>
       <a href="about.html" onclick="closeMenu()">Hakkında</a>
       <a href="contact.html" onclick="closeMenu()">İletişim</a>
       <button class="btn icon" onclick="toggleTheme()" style="width:100%; margin-top:10px;">🌓 Tema</button>
